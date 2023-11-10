@@ -14,7 +14,7 @@ function TransactionsStatistics() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/combinedData');
+      const response = await fetch('https://roxilerserver-j5ii.vercel.app/combinedData');
       const jsonData = await response.json();
       setData(jsonData);
     } catch (error) {

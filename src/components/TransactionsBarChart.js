@@ -9,7 +9,7 @@ const TransactionsBarChart = () => {
 
   useEffect(() => {
     
-    fetch('http://localhost:5000/combinedData')
+    fetch('https://roxilerserver-j5ii.vercel.app/combinedData')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
